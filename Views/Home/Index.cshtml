@@ -1,0 +1,18 @@
+﻿@model ProjectManagement.Models.User
+
+<h2>Добрый день @Model.Name!</h2>
+
+@if (User.IsInRole("projDirect"))
+{
+    <a class="btn" asp-action="Index" asp-controller="AdminPanel">Панель Администратора</a>
+    <a class="btn" asp-action="GetProject" asp-controller="Project">Мой список проектов</a>
+}
+
+@if (User.IsInRole("staff"))
+{
+    <p>@User.Identity.Name</p>
+    <a class="btn" asp-action="GetProject" asp-controller="Project">Мой список проектов</a>
+}
+
+<a class="btn" asp-action="LogOut" asp-controller="Account">Выход</a>
+

@@ -1,0 +1,30 @@
+﻿@model List<ProjectManagement.Models.Project>
+
+<h2>Проекты пользователя @User.Identity.Name</h2>
+
+@if (Model.Count() != 0)
+{
+<a class="btn btn-primary" asp-action="ProjectsForAdd" asp-controller="Project">Редактировать</a>
+    <table class="table">
+        <tr><th>Название</th><th>Дедлайн</th><th>Цена</th></tr>
+
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td>@project.Name</td>
+                <td>@project.Date</td>
+                <td>@project.Price</td>
+
+            </tr>
+                }
+            
+    </table>
+}
+
+else
+{
+    <p>Кажется, у вас нет проектов</p>
+    <br />
+    <a class="btn btn-primary" asp-action="ProjectsForAdd" asp-controller="Project">Редактировать</a>
+}
+

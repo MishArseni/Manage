@@ -1,0 +1,29 @@
+﻿@model List<ProjectManagement.Models.Project>
+
+<table class="table">
+    <tr><th>Название</th><th>Дедлайн</th><th>Цена</th></tr>
+
+    @foreach (var project in ViewBag.Db)
+    {
+        <tr>
+            <td>@project.Name</td>
+            <td>@project.Date</td>
+            <td>@project.Price</td>
+            <td>
+
+                @if (Model.Contains(project))
+                {<form asp-action="DeleteFromMy" asp-controller="Project" asp-route-id="@project.ProjectId" method="post">
+                        <button type="submit" class="btn btn-sm btn-danger">Покинуть</button>
+                    </form>
+                }
+                else
+                {
+                    <a class="btn btn-sm btn-primary" asp-action="AddToMyProject" asp-route-id="@project.ProjectId">Взяться за проект</a>
+                }
+
+            </td>
+        </tr>
+    }
+</table>
+<a class="btn btn-sm btn-primary" asp-action="GetProject" asp-controller="Project">Подтвердить</a>
+

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ProjectManagement.Models.User>
+
+<h2>Список сотрудников</h2>
+
+<a asp-action="CreateUser" asp-controller="AdminPanel" class="btn">Добавить сотрудника</a>
+
+<table class="table">
+    <tr><th>Имя</th><th>Email</th><th>Пароль</th><th>Роль</th></tr>
+
+    @foreach (var user in Model)
+    {
+         <tr>
+             <td>@user.Name</td>
+             <td>@user.Email</td>
+             <td>@user.Password</td>
+             <td>@user.RoleId</td>
+             <td>
+                 <form asp-action="DeleteUser" asp-route-Id="@user.UserId" method="post">
+                     <a class="btn" asp-action="EditUser" asp-route-Id="@user.UserId">Изменить</a>
+                     <button type="submit" class="btn btn-sm btn-danger">
+                         Удалить
+                     </button>
+                 </form>
+             </td>
+         </tr>
+    }
+</table>
