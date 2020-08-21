@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "livRKvx/zYGg9YXVuuzfFwiVitQ6C/9okZej9MLIQY3R1tjofONofazSKZe4E9HZI5tOUFcq5vbLcwogC2h9iQ==",
+  "dgSpecHash": "JAteQLVNlghY/FaIVibthnV8nXQeWwai0xJQSWLhKSv+BwN4AqtTsAPKe+/SgJLZs72ZHWPvGLmMu0COG/X5tA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Arseni\\Desktop\\ProjectManagement-d88ae073d32970b3e4774d6cc105da72e0df745e\\ProjectManagement.csproj",
+  "projectFilePath": "Z:\\Manage\\ProjectManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arseni\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Arseni\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

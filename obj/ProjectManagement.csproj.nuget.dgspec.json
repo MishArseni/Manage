@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Arseni\\Desktop\\ProjectManagement-d88ae073d32970b3e4774d6cc105da72e0df745e\\ProjectManagement.csproj": {}
+    "Z:\\Manage\\ProjectManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Arseni\\Desktop\\ProjectManagement-d88ae073d32970b3e4774d6cc105da72e0df745e\\ProjectManagement.csproj": {
+    "Z:\\Manage\\ProjectManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Arseni\\Desktop\\ProjectManagement-d88ae073d32970b3e4774d6cc105da72e0df745e\\ProjectManagement.csproj",
+        "projectUniqueName": "Z:\\Manage\\ProjectManagement.csproj",
         "projectName": "ProjectManagement",
-        "projectPath": "C:\\Users\\Arseni\\Desktop\\ProjectManagement-d88ae073d32970b3e4774d6cc105da72e0df745e\\ProjectManagement.csproj",
+        "projectPath": "Z:\\Manage\\ProjectManagement.csproj",
         "packagesPath": "C:\\Users\\Arseni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Arseni\\Desktop\\ProjectManagement-d88ae073d32970b3e4774d6cc105da72e0df745e\\obj\\",
+        "outputPath": "Z:\\Manage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arseni\\AppData\\Roaming\\NuGet\\NuGet.Config",
